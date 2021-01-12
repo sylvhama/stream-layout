@@ -1,0 +1,18 @@
+.main {
+  position: relative;
+}
+
+.main h1 {
+  position: absolute;
+  bottom: 2rem;
+  left: 4rem;
+}
+
+.main img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 640px;
+  height: 100vh;
+  object-fit: cover;
+}

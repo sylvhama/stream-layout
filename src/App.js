@@ -1,60 +1,26 @@
-function App() {
-  const games = [
-    "Super Mario Bros.",
-    "Super Mario Bros.: The Lost Levels",
-    "Super Mario Bros. 2",
-    "Super Mario Bros. 3",
-    "Super Mario World",
-    "Yoshi's Island",
-    "Super Mario 64",
-    "Super Mario Sunshine",
-    "Super Mario Galaxy",
-  ];
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { InOuTro, Main } from "./components";
 
-  const title = games[0];
-
+export function App() {
   return (
-    <main>
-      <section class="nes-container with-title is-rounded is-dark">
-        <p class="title">{title}</p>
-      </section>
-
-      <aside>
-        <section class="nes-container with-title is-rounded is-dark">
-          <p class="title">Mariothon</p>
-          {games.map((game) => (
-            <label key={game}>
-              <input type="checkbox" class="nes-checkbox is-dark" />
-              <span>{game}</span>
-            </label>
-          ))}
-          <br />
-          <p>Peut être plus...</p>
-          <i class="nes-mario"></i>
-        </section>
-
-        <section class="nes-container with-title is-rounded is-dark">
-          <p class="title">sylvhama</p>
-
-          <section class="icon-list">
-            <i class="nes-icon twitch is-large"></i>
-            <i class="nes-icon twitter is-large"></i>
-            <i class="nes-icon instagram is-large"></i>
-            <i class="nes-icon github is-large"></i>
-          </section>
-        </section>
-        <section class="nes-container with-title is-rounded is-dark">
-          <p class="title">SylvainHamann</p>
-
-          <section class="icon-list">
-            <i class="nes-icon youtube is-large"></i>
-            <i class="nes-icon linkedin is-large"></i>
-          </section>
-        </section>
-        <section class="nes-container with-title is-rounded is-dark"></section>
-      </aside>
-    </main>
+    <Router>
+      <Switch>
+        <Route path="/intro">
+          <InOuTro
+            title="Début de La lecture en continu..."
+            src="https://64.media.tumblr.com/965f6dd7055367c854d7f6799a8c4b96/tumblr_oly81wdEDo1rnbw6mo1_540.gifv"
+          />
+        </Route>
+        <Route path="/outro">
+          <InOuTro
+            title="Fin de la lecture en continu."
+            src="https://64.media.tumblr.com/a4128288be7be4f62cc145c243c5dc95/861089564bf6bee8-0f/s500x750/7e2bc0e2e8afb56a4a37a8e739e85b89c842120a.gifv"
+          />
+        </Route>
+        <Route>
+          <Main />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
-
-export default App;

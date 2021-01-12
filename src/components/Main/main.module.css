@@ -1,0 +1,22 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 620px;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  margin: 0 !important;
+}
+
+.aside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 500px repeat(2, auto) 1fr;
+}
+
+.mario {
+  bottom: 4px;
+  right: 2rem;
+  position: absolute;
+}

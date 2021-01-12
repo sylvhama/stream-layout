@@ -5,38 +5,20 @@ code,
 kbd,
 samp {
   font-family: "Press Start 2P", cursive;
+  background-color: #212529;
+  color: white;
 }
 
 main {
-  background-color: #212529;
   width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 620px;
-}
-
-.nes-container {
-  position: relative;
-  height: 100%;
-  margin: 0 !important;
-}
-
-aside {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 500px repeat(2, auto) 1fr;
 }
 
 label {
   display: block;
 }
+
 .icon-list {
   display: flex;
   gap: 1rem;
-}
-
-.nes-mario {
-  bottom: 4px;
-  right: 2rem;
-  position: absolute;
 }
