@@ -2,17 +2,18 @@
   position: relative;
 }
 
-.main h1 {
+.main h2 {
   position: absolute;
-  bottom: 2rem;
-  left: 4rem;
+  margin: 0;
+  bottom: 6rem;
+  left: 3rem;
 }
 
 .main img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 640px;
+  width: var(--right-column);
   height: 100vh;
   object-fit: cover;
 }

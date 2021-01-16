@@ -12,6 +12,7 @@ samp {
 main {
   width: 100vw;
   height: 100vh;
+  --right-column: 360px;
 }
 
 label {

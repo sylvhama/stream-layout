@@ -33,14 +33,7 @@ export function Main() {
       <aside class={styles.aside}>
         <section class={containerClass}>
           <p class="title">Mariothon</p>
-          {games.map((game) => (
-            <label key={game}>
-              <input type="checkbox" class="nes-checkbox is-dark" />
-              <span>{game}</span>
-            </label>
-          ))}
-          <br />
-          <p>Peut être plus...</p>
+          <p>On finit "tous" les Mario !</p>
           <i class={classnames(styles.mario, "nes-mario")}></i>
         </section>
 
