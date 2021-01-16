@@ -12,7 +12,7 @@ Gifs:
 ## How to use it?
 
 - use `npm start` or `serve -s build` (after running `npm run build` at least once and installing `serve`)
-- add a browser to your OBS scene
+- add a browser to your OBS scene (use different route for each scene)
 
 <img width="640" src="https://i.imgur.com/ut8c8mX.png" />
 
